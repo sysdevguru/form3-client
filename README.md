@@ -1,6 +1,6 @@
 # Form3 Account API Go client
 
-Simple Golang client library for Account API
+Simple Golang client library for Account API  
 Maintainer : Dany Shen
 
 ## Prerequisites
