@@ -13,13 +13,13 @@ Maintainer : Dany Shen
 ### Create form3go client
 ```go
 client := form3go.Client{
-    PubKeyID: os.Getenv("FORM3_KEY_ID"),
+    PubKeyID:    os.Getenv("FORM3_KEY_ID"),
     PrivKeyPath: os.Getenv("FORM3_PRIV_KEY_PATH"),
-    HttpClient: http.Client{},
+    HttpClient:  http.Client{},
 }
 ```
 
-### Create an account
+### Create Account
 CreateAccount returns account if creating account succeed.
 ```go
 account := form3go.Account{
@@ -36,7 +36,7 @@ acct, err := client.FetchAccount(id)
 
 ### List Accounts
 ```go
-accounts, _ := client.ListAccounts(pageNumber, pageSize)
+accounts, _ := client.ListAccounts(pageNumber, pageSize) // pageNumber, pageSize are int values
 ```
 
 ### Delete Account

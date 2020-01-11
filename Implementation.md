@@ -19,11 +19,11 @@ I validate provided Account struct when creating account.
 Even though provided account_api validates the struct.
 
 ## Running task
-Sometimes the containers are not running as described in the `depends_on`
-The reason could be existing, non removed containers
-So I recommend to run following command
+Sometimes the containers are not running as described in the `depends_on`.
+The reason could be existing, non removed containers.
+So I recommend to run following command.
 ```sh
 docker-compose up --build --remove-orphans
 ```
 
-service `test` is my implementation and it will run unit & integration tests
+service `test` in `docker-compose.yml` is my implementation and it will run unit & integration tests
